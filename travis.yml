@@ -1,8 +1,6 @@
 language: python
 python:
   - "3.9"
-env:
-  - DJANGO_SECRET_KEY=django-insecure
 install:
   - pip install -r requirements.txt
 before_script:
