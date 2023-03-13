@@ -1,9 +1,13 @@
 import datetime
 
 from django.contrib import admin
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils import timezone
 
+
+
+User = get_user_model()
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
